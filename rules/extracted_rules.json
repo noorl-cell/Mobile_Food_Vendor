@@ -1,0 +1,269 @@
+[
+  {
+    "rule_id": "permit_display",
+    "risk_type": "permit",
+    "applies_to": "mobile_food_vendor",
+    "keywords": [
+      "permit",
+      "decal",
+      "license",
+      "display"
+    ],
+    "requirement_summary": "Wear the license so your customers can see it at all times while vending. Display the Mobile Food Vending Permit and Decal  Check that the unit has a current valid permit readily available  for inspection",
+    "source": "NYC DOH Mobile Food Vendor Regulations",
+    "tfidf_score": 0.3501,
+    "grounded": true,
+    "confidence": "high"
+  },
+  {
+    "rule_id": "handwashing",
+    "risk_type": "handwashing",
+    "applies_to": "mobile_food_vendor",
+    "keywords": [
+      "handwashing",
+      "hand wash",
+      "hand-wash",
+      "sink"
+    ],
+    "requirement_summary": "If you prepare and cook raw or other potentially hazardous foods, make sure the  hand wash sink is working and that soap and paper towels or napkins are nearby",
+    "source": "NYC DOH Mobile Food Vendor Regulations",
+    "tfidf_score": 0.3258,
+    "grounded": true,
+    "confidence": "high"
+  },
+  {
+    "rule_id": "temperature_control",
+    "risk_type": "temperature",
+    "applies_to": "mobile_food_vendor",
+    "keywords": [
+      "temperature",
+      "cold",
+      "hot",
+      "41",
+      "140"
+    ],
+    "requirement_summary": "Hold Food at the Proper Temperatures  Keep cold food below 41 degrees F and keep hot food above 140 degrees F",
+    "source": "NYC DOH Mobile Food Vendor Regulations",
+    "tfidf_score": 0.2669,
+    "grounded": true,
+    "confidence": "high"
+  },
+  {
+    "rule_id": "commissary",
+    "risk_type": "commissary",
+    "applies_to": "mobile_food_vendor",
+    "keywords": [
+      "commissary"
+    ],
+    "requirement_summary": "\u2022 When you need more fresh water or supplies go back to the commissary",
+    "source": "NYC DOH Mobile Food Vendor Regulations",
+    "tfidf_score": 0.24,
+    "grounded": true,
+    "confidence": "high"
+  },
+  {
+    "rule_id": "food_protection",
+    "risk_type": "food_protection",
+    "applies_to": "mobile_food_vendor",
+    "keywords": [
+      "cover",
+      "contamination",
+      "protect",
+      "shield"
+    ],
+    "requirement_summary": "Use thermometers to monitor the temperature of foods in hot or cold storage often. Protect Food from Contamination  Keep food covered until served",
+    "source": "NYC DOH Mobile Food Vendor Regulations",
+    "tfidf_score": 0.1898,
+    "grounded": true,
+    "confidence": "high"
+  },
+  {
+    "rule_id": "waste_disposal",
+    "risk_type": "waste",
+    "applies_to": "mobile_food_vendor",
+    "keywords": [
+      "waste",
+      "garbage",
+      "refuse",
+      "wastewater"
+    ],
+    "requirement_summary": "\u2022 Cleaning mobile food vending units and removing waste are not  allowed at a depot. You must bring your unit to the commissary  in order to clean and wash it as well as throw away garbage  and waste",
+    "source": "NYC DOH Mobile Food Vendor Regulations",
+    "tfidf_score": 0.2546,
+    "grounded": true,
+    "confidence": "high"
+  },
+  {
+    "rule_id": "pest_control",
+    "risk_type": "pests",
+    "applies_to": "mobile_food_vendor",
+    "keywords": [
+      "pest",
+      "rodent",
+      "insect",
+      "vermin"
+    ],
+    "requirement_summary": "The facility must be pest-free. The facility may not be used to  prepare or store food. Each alternative service and storage  facility may store up to four pushcarts  or one vehicle (truck). The facility must provide potable water  (water that is safe to drink). STORAGE WHAT MOBILE FOOD VENDORS SHOULD KNOW 19 \u2022 Before leaving the commissary, make sure you have proof of where  you bought your food and have your commissary contract letter  readily available. \u2022 All items must be securely attached a",
+    "source": "NYC DOH Mobile Food Vendor Regulations",
+    "tfidf_score": 0.111,
+    "grounded": true,
+    "confidence": "high"
+  },
+  {
+    "rule_id": "food_worker_health",
+    "risk_type": "worker_health",
+    "applies_to": "mobile_food_vendor",
+    "keywords": [
+      "ill",
+      "illness",
+      "diarrhea",
+      "vomit",
+      "symptom"
+    ],
+    "requirement_summary": "WHAT  MOBILE FOOD VENDORS  SHOULD KNOW This guide will help you operate your mobile food vending  unit (pushcart or motor vehicle, including trucks)  safely and legally. Keep your staff and customers safe  from foodborne illness and avoid common violations. Call NYC Health Department at 212-676-1600 for more information. Table of Contents I. Introduction....................................................................................................1 II. Inspections...........................",
+    "source": "NYC DOH Mobile Food Vendor Regulations",
+    "tfidf_score": 0.0721,
+    "grounded": true,
+    "confidence": "medium"
+  },
+  {
+    "rule_id": "water_supply",
+    "risk_type": "water",
+    "applies_to": "mobile_food_vendor",
+    "keywords": [
+      "potable",
+      "water supply",
+      "water tank"
+    ],
+    "requirement_summary": "\u2022 A wastewater tank that holds 15 percent more liquid than the  drinking water tank (for example, at least 11.5 gallons for a 10 gallon  drinking water tank) to store dirty water. 20 LB x 2 5 FT 10 FT Water Tank Waste Tank 10 GAL WHAT MOBILE FOOD VENDORS SHOULD KNOW 11 If you prepare food on a truck, you must have:   \u2022 A tank for drinking water that holds at least 40 gallons",
+    "source": "NYC DOH Mobile Food Vendor Regulations",
+    "tfidf_score": 0.3451,
+    "grounded": true,
+    "confidence": "high"
+  },
+  {
+    "rule_id": "unapproved_source",
+    "risk_type": "sourcing",
+    "applies_to": "mobile_food_vendor",
+    "keywords": [
+      "approved source",
+      "unapproved",
+      "home"
+    ],
+    "requirement_summary": "40 GAL Water Tank 46 GAL CAPACITY Waste Tank 100 LB x 2 12 WHAT MOBILE FOOD VENDORS SHOULD KNOW  Ice cream trucks must have a signage arm (a stop sign that swings out)  and warning beepers. NOTE: Mobile food vending trucks are subject to  New York State motor vehicle laws. Please check  with New York State for details on approved sizes  for vehicles online at https://dmv.ny.gov/ or by  phone at 518-473-5595 WHAT MOBILE FOOD VENDORS SHOULD KNOW 13 VI. Service and Storage Facilities COMMISSARIES: ",
+    "source": "NYC DOH Mobile Food Vendor Regulations",
+    "tfidf_score": 0.1476,
+    "grounded": false,
+    "confidence": "low"
+  },
+  {
+    "rule_id": "ny_subpart_14-4_40",
+    "risk_type": "permit",
+    "applies_to": "mobile_food_vendor",
+    "section": "14-4.40",
+    "requirement_summary": "Permit required",
+    "source": "NY State Sanitary Code Subpart 14-4",
+    "confidence": "high",
+    "grounded": true
+  },
+  {
+    "rule_id": "ny_subpart_14-4_60",
+    "risk_type": "food",
+    "applies_to": "mobile_food_vendor",
+    "section": "14-4.60",
+    "requirement_summary": "Food supplies from approved source",
+    "source": "NY State Sanitary Code Subpart 14-4",
+    "confidence": "high",
+    "grounded": true
+  },
+  {
+    "rule_id": "ny_subpart_14-4_70",
+    "risk_type": "food",
+    "applies_to": "mobile_food_vendor",
+    "section": "14-4.70",
+    "requirement_summary": "Food protection - temperature, contamination",
+    "source": "NY State Sanitary Code Subpart 14-4",
+    "confidence": "high",
+    "grounded": true
+  },
+  {
+    "rule_id": "ny_subpart_14-4_80",
+    "risk_type": "transportation",
+    "applies_to": "mobile_food_vendor",
+    "section": "14-4.80",
+    "requirement_summary": "Transportation of food",
+    "source": "NY State Sanitary Code Subpart 14-4",
+    "confidence": "high",
+    "grounded": true
+  },
+  {
+    "rule_id": "ny_subpart_14-4_110",
+    "risk_type": "food",
+    "applies_to": "mobile_food_vendor",
+    "section": "14-4.110",
+    "requirement_summary": "Food preparation and service",
+    "source": "NY State Sanitary Code Subpart 14-4",
+    "confidence": "high",
+    "grounded": true
+  },
+  {
+    "rule_id": "ny_subpart_14-4_120",
+    "risk_type": "equipment",
+    "applies_to": "mobile_food_vendor",
+    "section": "14-4.120",
+    "requirement_summary": "Equipment and utensils",
+    "source": "NY State Sanitary Code Subpart 14-4",
+    "confidence": "high",
+    "grounded": true
+  },
+  {
+    "rule_id": "ny_subpart_14-4_150",
+    "risk_type": "water",
+    "applies_to": "mobile_food_vendor",
+    "section": "14-4.150",
+    "requirement_summary": "Water supply - potable",
+    "source": "NY State Sanitary Code Subpart 14-4",
+    "confidence": "high",
+    "grounded": true
+  },
+  {
+    "rule_id": "ny_subpart_14-4_160",
+    "risk_type": "liquid",
+    "applies_to": "mobile_food_vendor",
+    "section": "14-4.160",
+    "requirement_summary": "Liquid wastes and sewage disposal",
+    "source": "NY State Sanitary Code Subpart 14-4",
+    "confidence": "high",
+    "grounded": true
+  },
+  {
+    "rule_id": "ny_subpart_14-4_170",
+    "risk_type": "handwashing",
+    "applies_to": "mobile_food_vendor",
+    "section": "14-4.170",
+    "requirement_summary": "Handwashing facilities",
+    "source": "NY State Sanitary Code Subpart 14-4",
+    "confidence": "high",
+    "grounded": true
+  },
+  {
+    "rule_id": "ny_subpart_14-4_180",
+    "risk_type": "garbage",
+    "applies_to": "mobile_food_vendor",
+    "section": "14-4.180",
+    "requirement_summary": "Garbage and refuse",
+    "source": "NY State Sanitary Code Subpart 14-4",
+    "confidence": "high",
+    "grounded": true
+  },
+  {
+    "rule_id": "ny_subpart_14-4_190",
+    "risk_type": "insect",
+    "applies_to": "mobile_food_vendor",
+    "section": "14-4.190",
+    "requirement_summary": "Insect and rodent control",
+    "source": "NY State Sanitary Code Subpart 14-4",
+    "confidence": "high",
+    "grounded": true
+  }
+]
