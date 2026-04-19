@@ -1,0 +1,8 @@
+{
+  "stage": "extract_rules",
+  "source": "C:\\Users\\Family Auto - Sales\\Downloads\\Project V2\\data\\raw\\nyc_mobile_food_vendor_regs.txt",
+  "paragraphs_indexed": 69,
+  "rules_extracted": 21,
+  "grounded_rules": 20,
+  "status": "ok"
+}

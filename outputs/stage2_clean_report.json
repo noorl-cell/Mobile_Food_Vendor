@@ -1,0 +1,44 @@
+{
+  "stage": "clean",
+  "inputs": {
+    "suffolk_raw_rows": 107843
+  },
+  "outputs": {
+    "suffolk_clean": {
+      "file": "C:\\Users\\Family Auto - Sales\\Downloads\\Project V2\\data\\processed\\suffolk_violations_clean.csv",
+      "rows": 107843,
+      "date_min": "2024-01-02 14:43:00",
+      "date_max": "2025-12-31 21:03:00",
+      "unique_facilities": 4977,
+      "top_cities": {
+        "HUNTINGTON": 4320,
+        "PATCHOGUE": 4235,
+        "BAY SHORE": 3336,
+        "COMMACK": 3108,
+        "SOUTHAMPTON": 3091,
+        "MONTAUK": 2817,
+        "DEER PARK": 2721,
+        "RIVERHEAD": 2664,
+        "LINDENHURST": 2659,
+        "SMITHTOWN": 2615
+      }
+    },
+    "weather_clean": {
+      "file": "C:\\Users\\Family Auto - Sales\\Downloads\\Project V2\\data\\processed\\weather_clean.csv",
+      "rows": 729,
+      "date_min": "2023-01-01 00:00:00",
+      "date_max": "2024-12-31 00:00:00"
+    },
+    "nysdoh_nassau": {
+      "file": "C:\\Users\\Family Auto - Sales\\Downloads\\Project V2\\data\\processed\\nysdoh_nassau_clean.csv",
+      "rows": 1624,
+      "critical_violations_sum": 147
+    }
+  },
+  "checks": {
+    "suffolk_dropped_missing_critical": 0,
+    "suffolk_dedup_removed": 0
+  },
+  "status": "ok",
+  "failures": []
+}

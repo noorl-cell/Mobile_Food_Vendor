@@ -1,0 +1,213 @@
+{
+  "stage": "predict",
+  "status": "ok",
+  "failures": [],
+  "results": [
+    {
+      "vendor": "Montauk Lobster Roll Truck",
+      "compliance_score": 99.0,
+      "predicted_risk_probability": 0.01,
+      "risk_band": "low",
+      "model_confidence": "high",
+      "top_risk_contributors": [
+        {
+          "feature": "days_since_last",
+          "value": 180,
+          "importance": 0.054
+        },
+        {
+          "feature": "has_temperature",
+          "value": 1,
+          "importance": 0.356
+        },
+        {
+          "feature": "prior_viol_avg",
+          "value": 1.25,
+          "importance": 0.153
+        }
+      ],
+      "required_permits_and_rules": [
+        {
+          "rule_id": "permit_display",
+          "section": null,
+          "summary": "Wear the license so your customers can see it at all times while vending. Display the Mobile Food Vending Permit and Decal  Check that the unit has a current valid permit readily available  for inspection",
+          "source": "NYC DOH Mobile Food Vendor Regulations",
+          "confidence": "high"
+        },
+        {
+          "rule_id": "commissary",
+          "section": null,
+          "summary": "\u2022 When you need more fresh water or supplies go back to the commissary",
+          "source": "NYC DOH Mobile Food Vendor Regulations",
+          "confidence": "high"
+        },
+        {
+          "rule_id": "ny_subpart_14-4_40",
+          "section": "14-4.40",
+          "summary": "Permit required",
+          "source": "NY State Sanitary Code Subpart 14-4",
+          "confidence": "high"
+        }
+      ],
+      "recommended_actions": [
+        {
+          "priority": "high",
+          "action": "Maintain cold holding <41\u00b0F and hot holding >140\u00b0F; log every 2h.",
+          "grounded_in": "NYC DOH \u2014 Hold Food at Proper Temperatures"
+        }
+      ],
+      "derived_from": {
+        "data_sources": [
+          "Suffolk County Restaurant Violations 2024-2025 (ArcGIS FeatureServer)",
+          "NOAA NCEI Daily Summaries - Islip KISP",
+          "NYC DOH Mobile Food Vendor Regulations (PDF)",
+          "NY State Sanitary Code Subpart 14-4"
+        ],
+        "model": "GradientBoostingClassifier \u2014 ROC AUC 0.859 on temporal holdout",
+        "rules_version": "rules/extracted_rules.json"
+      }
+    },
+    {
+      "vendor": "Huntington Halal Cart (lapsed permit)",
+      "compliance_score": 37.0,
+      "predicted_risk_probability": 0.63,
+      "risk_band": "high",
+      "model_confidence": "low",
+      "top_risk_contributors": [
+        {
+          "feature": "days_since_last",
+          "value": 90,
+          "importance": 0.054
+        },
+        {
+          "feature": "prior_viol_avg",
+          "value": 7.0,
+          "importance": 0.153
+        },
+        {
+          "feature": "has_temperature",
+          "value": 1,
+          "importance": 0.356
+        },
+        {
+          "feature": "has_handwashing",
+          "value": 1,
+          "importance": 0.182
+        },
+        {
+          "feature": "has_permit",
+          "value": 1,
+          "importance": 0.135
+        }
+      ],
+      "required_permits_and_rules": [
+        {
+          "rule_id": "permit_display",
+          "section": null,
+          "summary": "Wear the license so your customers can see it at all times while vending. Display the Mobile Food Vending Permit and Decal  Check that the unit has a current valid permit readily available  for inspection",
+          "source": "NYC DOH Mobile Food Vendor Regulations",
+          "confidence": "high"
+        },
+        {
+          "rule_id": "commissary",
+          "section": null,
+          "summary": "\u2022 When you need more fresh water or supplies go back to the commissary",
+          "source": "NYC DOH Mobile Food Vendor Regulations",
+          "confidence": "high"
+        },
+        {
+          "rule_id": "ny_subpart_14-4_40",
+          "section": "14-4.40",
+          "summary": "Permit required",
+          "source": "NY State Sanitary Code Subpart 14-4",
+          "confidence": "high"
+        }
+      ],
+      "recommended_actions": [
+        {
+          "priority": "critical",
+          "action": "Renew mobile food vending permit before operating.",
+          "grounded_in": "NYC DOH Mobile Food Vendor Regulations + NY Subpart 14-4.40"
+        },
+        {
+          "priority": "critical",
+          "action": "Install handwashing station with potable water before service.",
+          "grounded_in": "NY Subpart 14-4.170"
+        },
+        {
+          "priority": "high",
+          "action": "Maintain cold holding <41\u00b0F and hot holding >140\u00b0F; log every 2h.",
+          "grounded_in": "NYC DOH \u2014 Hold Food at Proper Temperatures"
+        },
+        {
+          "priority": "high",
+          "action": "Document pest-control contract and inspection log.",
+          "grounded_in": "NY Subpart 14-4.190"
+        },
+        {
+          "priority": "critical",
+          "action": "Source all food from approved commissary / licensed suppliers only.",
+          "grounded_in": "NY Subpart 14-4.60"
+        }
+      ],
+      "derived_from": {
+        "data_sources": [
+          "Suffolk County Restaurant Violations 2024-2025 (ArcGIS FeatureServer)",
+          "NOAA NCEI Daily Summaries - Islip KISP",
+          "NYC DOH Mobile Food Vendor Regulations (PDF)",
+          "NY State Sanitary Code Subpart 14-4"
+        ],
+        "model": "GradientBoostingClassifier \u2014 ROC AUC 0.859 on temporal holdout",
+        "rules_version": "rules/extracted_rules.json"
+      }
+    },
+    {
+      "vendor": "Patchogue Coffee Cart (new vendor)",
+      "compliance_score": 99.7,
+      "predicted_risk_probability": 0.003,
+      "risk_band": "low",
+      "model_confidence": "high",
+      "top_risk_contributors": [
+        {
+          "feature": "days_since_last",
+          "value": -1,
+          "importance": 0.054
+        }
+      ],
+      "required_permits_and_rules": [
+        {
+          "rule_id": "permit_display",
+          "section": null,
+          "summary": "Wear the license so your customers can see it at all times while vending. Display the Mobile Food Vending Permit and Decal  Check that the unit has a current valid permit readily available  for inspection",
+          "source": "NYC DOH Mobile Food Vendor Regulations",
+          "confidence": "high"
+        },
+        {
+          "rule_id": "commissary",
+          "section": null,
+          "summary": "\u2022 When you need more fresh water or supplies go back to the commissary",
+          "source": "NYC DOH Mobile Food Vendor Regulations",
+          "confidence": "high"
+        },
+        {
+          "rule_id": "ny_subpart_14-4_40",
+          "section": "14-4.40",
+          "summary": "Permit required",
+          "source": "NY State Sanitary Code Subpart 14-4",
+          "confidence": "high"
+        }
+      ],
+      "recommended_actions": [],
+      "derived_from": {
+        "data_sources": [
+          "Suffolk County Restaurant Violations 2024-2025 (ArcGIS FeatureServer)",
+          "NOAA NCEI Daily Summaries - Islip KISP",
+          "NYC DOH Mobile Food Vendor Regulations (PDF)",
+          "NY State Sanitary Code Subpart 14-4"
+        ],
+        "model": "GradientBoostingClassifier \u2014 ROC AUC 0.859 on temporal holdout",
+        "rules_version": "rules/extracted_rules.json"
+      }
+    }
+  ]
+}

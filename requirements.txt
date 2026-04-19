@@ -1,0 +1,25 @@
+# Mobile Food Vendor Compliance Assistant — Python dependencies
+# Install: pip install -r requirements.txt
+# Tested on Python 3.11+ (developed on 3.14)
+
+# ─── Core data / ML ───────────────────────────────────────────────
+pandas>=2.2,<4
+numpy>=1.26,<3
+scikit-learn>=1.5,<2
+joblib>=1.4,<2
+
+# ─── HTTP / ingestion ─────────────────────────────────────────────
+requests>=2.31,<3
+
+# ─── PDF parsing (Stage 3 rule extraction) ────────────────────────
+pypdf>=4.0,<7
+
+# ─── Streamlit UI ─────────────────────────────────────────────────
+streamlit>=1.36,<2
+
+# ─── RAG chatbot ──────────────────────────────────────────────────
+anthropic>=0.40,<1
+python-dotenv>=1.0,<2
+
+# ─── Report generation (src/build_report.py) ──────────────────────
+python-docx>=1.1,<2

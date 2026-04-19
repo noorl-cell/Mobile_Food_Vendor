@@ -1,0 +1,119 @@
+{
+  "jurisdiction": "Suffolk County, NY — Mobile Food Vendors",
+  "last_updated": "2026-04-15",
+  "permits": [
+    {
+      "id": "sc_mobile_food_permit",
+      "name": "Suffolk County Mobile Food Service Permit",
+      "issuer": "Suffolk County Department of Health Services — Office of Food Protection",
+      "required_for": "Any pushcart, truck, trailer, or vehicle preparing or serving food to the public in Suffolk County.",
+      "authority": "NY State Sanitary Code Subpart 14-4 + Suffolk County Sanitary Code Article 13",
+      "typical_fee_usd": "300 — 600 (varies by unit type)",
+      "renewal": "Annual",
+      "prerequisites": [
+        "Commissary agreement with an approved fixed food establishment",
+        "Plan review and pre-operational inspection of the unit",
+        "Certified Food Protection Manager on staff",
+        "Potable water tank + wastewater tank sized per code"
+      ],
+      "source": "https://www.suffolkcountyny.gov/Departments/Health-Services/Environmental-Quality/Food-Protection"
+    },
+    {
+      "id": "ny_sales_tax_cert",
+      "name": "NY State Certificate of Authority (Sales Tax)",
+      "issuer": "NY State Department of Taxation and Finance",
+      "required_for": "Collecting sales tax on prepared food sales.",
+      "authority": "NY Tax Law §1134",
+      "typical_fee_usd": "0 (free)",
+      "renewal": "Valid until surrendered or revoked",
+      "prerequisites": ["Registered business entity or sole-prop with EIN"],
+      "source": "https://www.tax.ny.gov/bus/st/register.htm"
+    },
+    {
+      "id": "food_protection_cert",
+      "name": "Food Protection Certificate (Manager)",
+      "issuer": "Accredited provider (ServSafe, NRFSP, Prometric)",
+      "required_for": "At least one certified manager must supervise food prep at all times.",
+      "authority": "NY State Sanitary Code Part 14",
+      "typical_fee_usd": "100 — 200",
+      "renewal": "Every 5 years",
+      "prerequisites": ["Pass ANSI-accredited exam"],
+      "source": "https://www.health.ny.gov/environmental/indoors/food_safety/"
+    },
+    {
+      "id": "commissary_agreement",
+      "name": "Commissary Agreement",
+      "issuer": "Approved commissary (fixed food establishment)",
+      "required_for": "Daily cleaning, water refill, waste disposal, and food storage for the mobile unit.",
+      "authority": "NY State Sanitary Code Subpart 14-4 §14-4.40",
+      "typical_fee_usd": "Negotiated with commissary",
+      "renewal": "As contracted (typically annual)",
+      "prerequisites": ["Written agreement signed by commissary operator"],
+      "source": "NY Subpart 14-4.40"
+    },
+    {
+      "id": "town_vending_permit",
+      "name": "Town / Village Vending Permit",
+      "issuer": "Local town clerk (e.g., Huntington, Islip, Brookhaven, Southampton)",
+      "required_for": "Vending on town property, public streets, beaches, or parks.",
+      "authority": "Local municipal code — varies by township",
+      "typical_fee_usd": "50 — 500 (varies)",
+      "renewal": "Annual or seasonal",
+      "prerequisites": [
+        "Valid county health permit",
+        "Proof of liability insurance",
+        "Approved location / route map"
+      ],
+      "source": "Contact local town clerk"
+    },
+    {
+      "id": "fire_suppression_inspection",
+      "name": "Fire Suppression System Inspection (if cooking with oil/grease)",
+      "issuer": "Local fire marshal",
+      "required_for": "Any truck with an open flame, fryer, or grill.",
+      "authority": "NFPA 96 + NY State Uniform Fire Code",
+      "typical_fee_usd": "150 — 400 semi-annual",
+      "renewal": "Every 6 months",
+      "prerequisites": ["Installed ANSUL or equivalent suppression system"],
+      "source": "Local fire marshal"
+    },
+    {
+      "id": "dmv_commercial_reg",
+      "name": "DMV Commercial Vehicle Registration",
+      "issuer": "NY State DMV",
+      "required_for": "Any motor-vehicle-based food unit (trucks, trailers).",
+      "authority": "NY VTL §401",
+      "typical_fee_usd": "Varies by GVWR",
+      "renewal": "Annual or biennial",
+      "prerequisites": ["Title, insurance, inspection"],
+      "source": "https://dmv.ny.gov"
+    },
+    {
+      "id": "general_liability_insurance",
+      "name": "General Liability Insurance",
+      "issuer": "Licensed insurer",
+      "required_for": "Most towns and events require proof before issuing a vending permit.",
+      "authority": "Local permit conditions",
+      "typical_fee_usd": "500 — 2,000 / year",
+      "renewal": "Annual",
+      "prerequisites": ["Minimum $1M per-occurrence typical"],
+      "source": "Insurance broker"
+    }
+  ],
+  "conditional_permits": [
+    {
+      "id": "temp_event_permit",
+      "name": "Temporary Food Service Permit",
+      "when": "Operating at a fair, festival, or special event for ≤14 consecutive days.",
+      "issuer": "Suffolk County Department of Health Services",
+      "source": "NY Subpart 14-2"
+    },
+    {
+      "id": "beach_park_permit",
+      "name": "Parks Department Vending Concession",
+      "when": "Operating inside Suffolk County or NY State parks/beaches.",
+      "issuer": "Suffolk County Parks or NY State Parks",
+      "source": "Parks Department"
+    }
+  ]
+}

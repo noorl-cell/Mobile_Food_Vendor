@@ -1,0 +1,24 @@
+{
+  "stage": "features",
+  "rows": 8849,
+  "unique_facilities": 4970,
+  "target_positive_rate": 0.28873319019098204,
+  "weather_join_coverage": 0.5084190303989151,
+  "category_distribution": {
+    "food_protection": 27024,
+    "permit": 22592,
+    "temperature": 21511,
+    "handwashing": 20783,
+    "other": 14090,
+    "worker_health": 1013,
+    "waste": 468,
+    "water": 263,
+    "pests": 67,
+    "sourcing": 31
+  },
+  "checks": {
+    "no_leakage": "prior_* features use cumcount before current row"
+  },
+  "null_target": 0,
+  "status": "ok"
+}

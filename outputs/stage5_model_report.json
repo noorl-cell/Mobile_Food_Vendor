@@ -1,0 +1,118 @@
+{
+  "train_rows": 7079,
+  "test_rows": 1770,
+  "train_positive_rate": 0.2925554456844187,
+  "test_positive_rate": 0.2734463276836158,
+  "roc_auc": 0.8587168875236173,
+  "pr_auc": 0.6726627570740632,
+  "baseline_roc_auc": 0.5,
+  "confusion_matrix": [
+    [
+      1176,
+      110
+    ],
+    [
+      251,
+      233
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.8241065171688857,
+      "recall": 0.9144634525660964,
+      "f1-score": 0.8669369701437523,
+      "support": 1286.0
+    },
+    "1": {
+      "precision": 0.6793002915451894,
+      "recall": 0.48140495867768596,
+      "f1-score": 0.5634824667472793,
+      "support": 484.0
+    },
+    "accuracy": 0.796045197740113,
+    "macro avg": {
+      "precision": 0.7517034043570376,
+      "recall": 0.6979342056218911,
+      "f1-score": 0.7152097184455157,
+      "support": 1770.0
+    },
+    "weighted avg": {
+      "precision": 0.7845097865463608,
+      "recall": 0.796045197740113,
+      "f1-score": 0.7839584505709314,
+      "support": 1770.0
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "has_temperature",
+      "importance": 0.356
+    },
+    {
+      "feature": "has_handwashing",
+      "importance": 0.1825
+    },
+    {
+      "feature": "prior_viol_avg",
+      "importance": 0.1526
+    },
+    {
+      "feature": "has_permit",
+      "importance": 0.1348
+    },
+    {
+      "feature": "days_since_last",
+      "importance": 0.0541
+    },
+    {
+      "feature": "tmax",
+      "importance": 0.0177
+    },
+    {
+      "feature": "prior_viol_sum",
+      "importance": 0.0174
+    },
+    {
+      "feature": "month",
+      "importance": 0.0168
+    },
+    {
+      "feature": "tmin",
+      "importance": 0.0152
+    },
+    {
+      "feature": "prior_crit_sum",
+      "importance": 0.013
+    },
+    {
+      "feature": "has_pests",
+      "importance": 0.012
+    },
+    {
+      "feature": "prcp",
+      "importance": 0.0096
+    },
+    {
+      "feature": "dow",
+      "importance": 0.0068
+    },
+    {
+      "feature": "prior_visits",
+      "importance": 0.0059
+    },
+    {
+      "feature": "has_sourcing",
+      "importance": 0.0039
+    },
+    {
+      "feature": "is_summer",
+      "importance": 0.0016
+    }
+  ],
+  "checks": {
+    "auc_above_baseline": true,
+    "predictions_not_random": true,
+    "pr_auc_above_base": true
+  },
+  "status": "ok"
+}

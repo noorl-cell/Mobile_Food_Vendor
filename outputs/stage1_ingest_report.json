@@ -1,0 +1,73 @@
+{
+  "stage": "ingest",
+  "sources": [
+    {
+      "name": "ny_food_inspections",
+      "label": "NYSDOH Food Service Inspections (cnih-y5dw)",
+      "url": "https://health.data.ny.gov/resource/cnih-y5dw.csv?$limit=50000",
+      "rows": 21669,
+      "cols": [
+        "facility",
+        "address",
+        "date",
+        "violations",
+        "total_critical_violations",
+        "total_crit_not_corrected",
+        "total_noncritical_violations",
+        "description",
+        "local_health_department",
+        "county",
+        "facility_address",
+        "city",
+        "zip_code",
+        "nysdoh_gazetteer_1980",
+        "municipality",
+        "operation_name",
+        "permit_expiration_date",
+        "permitted_d_b_a",
+        "permitted_corp_name",
+        "perm_operator_last_name",
+        "perm_operator_first_name",
+        "nys_health_operation_id",
+        "inspection_type",
+        "inspection_comments",
+        "food_service_facility_state"
+      ],
+      "file": "C:\\Users\\Family Auto - Sales\\Downloads\\Project V2\\data\\raw\\ny_food_inspections.csv",
+      "status": "ok"
+    },
+    {
+      "name": "noaa_weather",
+      "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=daily-summaries&stations=USW00054790&startDate=2023-01-01&endDate=2024-12-31&dataTypes=TMAX,TMIN,PRCP,SNOW,AWND&format=csv&units=standard",
+      "rows": 729,
+      "cols": [
+        "STATION",
+        "DATE",
+        "AWND",
+        "PRCP",
+        "SNOW",
+        "TMAX",
+        "TMIN"
+      ],
+      "file": "C:\\Users\\Family Auto - Sales\\Downloads\\Project V2\\data\\raw\\noaa_weather.csv",
+      "status": "ok"
+    },
+    {
+      "name": "ny_regulations",
+      "items": [
+        {
+          "label": "NY Subpart 14-4",
+          "url": "https://regs.health.ny.gov/volume-a-1/content/subpart-14-4-mobile-food-service-establishments-and-pushcarts",
+          "status": "http_404"
+        },
+        {
+          "label": "NY Part 14",
+          "url": "https://regs.health.ny.gov/volume-a-1/content/part-14-food-service-establishments",
+          "status": "http_404"
+        }
+      ]
+    }
+  ],
+  "status": "ok",
+  "summary": "2/3 source groups succeeded"
+}
